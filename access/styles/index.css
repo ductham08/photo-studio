@@ -1,0 +1,415 @@
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url("../fonts/BeVietnamPro-Light.ttf") format("truetype");
+}
+
+:root {
+  --bg-color: #111111;
+  --title-color: #ffffff;
+  --text-color: #ffffff;
+  --font-size-title: 24px;
+  --font-size-text: 16px;
+  --width-container: 1350px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.haha-studio-wrapper {
+  font-family: 'BeVietnamPro';
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.haha-studio-wrapper .container {
+  width: 100%;
+  max-width: var(--width-container);
+  margin: 0px auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .haha-studio-wrapper .container {
+    padding: 0px 10px;
+  }
+}
+
+.haha-studio-wrapper .title {
+  font-weight: 600;
+  color: black;
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+.haha-studio-wrapper .booking a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  white-space: unset;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(98%, #000000));
+  background-image: linear-gradient(to bottom, #000000 0%, #000000 98%);
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 0;
+}
+
+.haha-studio-wrapper .booking a:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-size: 100% 1px;
+}
+
+.haha-studio-wrapper span.red {
+  background-color: #f9aa9e;
+}
+
+.haha-studio-wrapper span.yellow {
+  background-color: #f0ff00;
+}
+
+.haha-studio-wrapper .header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+}
+
+.haha-studio-wrapper .header-wrapper .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .haha-studio-wrapper .header-wrapper .header-content.header-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .haha-studio-wrapper .header-wrapper .header-content.header-mobile {
+    display: none;
+  }
+}
+
+.haha-studio-wrapper .header-wrapper .header-content .logo h1 a {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.haha-studio-wrapper .header-wrapper .header-content .menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 25px;
+}
+
+.haha-studio-wrapper .header-wrapper .header-content .menu-wrapper .menu-item a {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.haha-studio-wrapper .header-wrapper .header-mobile {
+  width: 100%;
+  position: relative;
+}
+
+.haha-studio-wrapper .header-wrapper .header-mobile .top-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.haha-studio-wrapper .header-wrapper .header-mobile .top-wraper .button-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  gap: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.haha-studio-wrapper .header-wrapper .header-mobile .top-wraper .button-wraper .line {
+  width: 30px;
+  height: 4px;
+  border-radius: 10px;
+  background: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.haha-studio-wrapper .header-wrapper .header-mobile .top-wraper .button-wraper.active .top {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: rotate(45deg) translateY(12.5px);
+          transform: rotate(45deg) translateY(12.5px);
+}
+
+.haha-studio-wrapper .header-wrapper .header-mobile .top-wraper .button-wraper.active .middle {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.haha-studio-wrapper .header-wrapper .header-mobile .top-wraper .button-wraper.active .bottom {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: rotate(-45deg) translateY(-12.5px);
+          transform: rotate(-45deg) translateY(-12.5px);
+}
+
+.haha-studio-wrapper .header-wrapper .header-mobile .menu-mobile-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 15px 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+  height: 92vh;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.haha-studio-wrapper .header-wrapper .header-mobile .menu-mobile-wrapper.active {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.haha-studio-wrapper .header-wrapper .header-mobile .menu-mobile-wrapper .bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  z-index: 998;
+}
+
+.haha-studio-wrapper .header-wrapper .header-mobile .menu-mobile-wrapper .menu-wrapper {
+  position: relative;
+  z-index: 999;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.haha-studio-wrapper .header-wrapper .header-mobile .menu-mobile-wrapper .menu-wrapper .menu-item a {
+  color: white;
+}
+
+.haha-studio-wrapper .section-about {
+  padding: 15px 0;
+  margin: 1rem 0;
+}
+
+.haha-studio-wrapper .section-about .about-content .content-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .haha-studio-wrapper .section-about .about-content .content-wraper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.haha-studio-wrapper .section-about .about-content .content-wraper .about-thumb {
+  width: 65%;
+}
+
+@media screen and (max-width: 768px) {
+  .haha-studio-wrapper .section-about .about-content .content-wraper .about-thumb {
+    width: 100%;
+  }
+}
+
+.haha-studio-wrapper .section-about .about-content .content-wraper .about-text {
+  width: 35%;
+  padding-left: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .haha-studio-wrapper .section-about .about-content .content-wraper .about-text {
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 0;
+  }
+}
+
+.haha-studio-wrapper .section-about .about-content .content-wraper .about-text h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: initial;
+}
+
+.haha-studio-wrapper .section-about .about-content .content-wraper .about-text h1 span {
+  font-weight: 500;
+}
+
+.haha-studio-wrapper .section-about .about-content .content-wraper .about-text p {
+  margin-bottom: 10px;
+}
+
+.haha-studio-wrapper .section-about .about-content .content-wraper .about-text .booking {
+  margin-top: 25px;
+}
+
+.haha-studio-wrapper .section-concept {
+  padding: 15px 0;
+  margin: 1rem 0;
+}
+
+.haha-studio-wrapper .section-concept .concept-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 25px;
+}
+
+.haha-studio-wrapper .section-concept .concept-wraper .media {
+  width: calc((100% - 50px) / 3);
+}
+
+@media screen and (max-width: 768px) {
+  .haha-studio-wrapper .section-concept .concept-wraper .media {
+    width: calc((100% - 25px) / 2);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .haha-studio-wrapper .section-concept .concept-wraper .media {
+    width: 100%;
+  }
+}
+
+.haha-studio-wrapper .section-concept .concept-wraper .media .thumb {
+  padding-bottom: 10px;
+  overflow: hidden;
+  aspect-ratio: .8;
+}
+
+.haha-studio-wrapper .section-concept .concept-wraper .media .thumb img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.haha-studio-wrapper .section-concept .concept-wraper .media .thumb:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.haha-studio-wrapper .section-concept .concept-wraper .media hr {
+  margin: 10px 0;
+}
+
+.haha-studio-wrapper .section-concept .concept-wraper .media .text h3 {
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=index.css.map */
