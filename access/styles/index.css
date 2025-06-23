@@ -45,8 +45,9 @@
 .haha-studio-wrapper .title {
   font-weight: 600;
   color: black;
-  font-size: 42px;
+  font-size: 32px;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
 .haha-studio-wrapper .booking a {
@@ -90,6 +91,10 @@
 
 .haha-studio-wrapper span.yellow {
   background-color: #f0ff00;
+}
+
+.haha-studio-wrapper span.green {
+  background-color: #BADA55;
 }
 
 .haha-studio-wrapper .header-wrapper {
@@ -270,7 +275,7 @@
 
 .haha-studio-wrapper .section-about {
   padding: 15px 0;
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 
 .haha-studio-wrapper .section-about .about-content .content-wraper {
@@ -351,7 +356,7 @@
 
 .haha-studio-wrapper .section-concept {
   padding: 15px 0;
-  margin: 1rem 0;
+  margin-bottom: 3rem;
 }
 
 .haha-studio-wrapper .section-concept .concept-wraper {
@@ -410,6 +415,79 @@
 }
 
 .haha-studio-wrapper .section-concept .concept-wraper .media .text h3 {
+  text-transform: uppercase;
+}
+
+.haha-studio-wrapper .section-service {
+  padding: 15px 0;
+  margin-bottom: 3rem;
+}
+
+.haha-studio-wrapper .section-service .service-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 25px;
+}
+
+.haha-studio-wrapper .section-service .service-wraper .item-service {
+  width: calc((100% - 50px) / 3);
+  padding: 50px 25px;
+  border: 1px solid gainsboro;
+}
+
+@media screen and (max-width: 768px) {
+  .haha-studio-wrapper .section-service .service-wraper .item-service {
+    width: calc((100% - 25px) / 2);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .haha-studio-wrapper .section-service .service-wraper .item-service {
+    width: 100%;
+  }
+}
+
+.haha-studio-wrapper .section-service .service-wraper .item-service .title-item {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.haha-studio-wrapper .section-service .service-wraper .item-service .desc-wraper {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.haha-studio-wrapper .section-service .service-wraper .item-service .desc-wraper li {
+  list-style: circle;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.haha-studio-wrapper .section-service .service-wraper .item-service .price-item {
+  background-color: gainsboro;
+  padding: 10px 0;
+  text-align: center;
   text-transform: uppercase;
 }
 /*# sourceMappingURL=index.css.map */

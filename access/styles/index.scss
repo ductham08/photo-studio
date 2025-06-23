@@ -48,8 +48,9 @@
     .title {
         font-weight: 600;
         color: black;
-        font-size: 42px;
+        font-size: 32px;
         margin-bottom: 25px;
+        text-transform: uppercase;
     }
 
     .booking {
@@ -86,6 +87,10 @@
 
         &.yellow {
             background-color: #f0ff00;
+        }
+
+        &.green {
+            background-color: #BADA55;
         }
     }
 
@@ -241,7 +246,7 @@
     // SECTION ABOUT START
     .section-about {
         padding: 15px 0;
-        margin: 1rem 0;
+        margin: 3rem 0;
 
         .about-content {
             .content-wraper {
@@ -269,7 +274,7 @@
                     justify-content: space-between;
                     align-items: flex-start;
                     padding-bottom: 25px;
-                    
+
                     @media screen and (max-width: 768px) {
                         width: 100%;
                         padding-top: 25px;
@@ -291,7 +296,7 @@
                         margin-bottom: 10px;
                     }
 
-                    .booking{
+                    .booking {
                         margin-top: 25px;
                     }
                 }
@@ -304,7 +309,7 @@
     // SECTION CONCEPT START
     .section-concept {
         padding: 15px 0;
-        margin: 1rem 0;
+        margin-bottom: 3rem;
 
         .concept-wraper {
             display: flex;
@@ -356,4 +361,63 @@
     }
 
     // SECTION CONCEPT END
+
+    // SECTION SERVICE START
+    .section-service {
+        padding: 15px 0;
+        margin-bottom: 3rem;
+
+        .service-wraper {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+
+            .item-service {
+                width: calc((100% - 50px) / 3);
+                padding: 50px 25px;
+                border: 1px solid gainsboro;
+
+                @media screen and (max-width: 768px) {
+                    width: calc((100% - 25px) / 2);
+                }
+
+                @media screen and (max-width: 500px) {
+                    width: 100%;
+                }
+
+                .title-item {
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                .desc-wraper{
+                    margin-bottom: 20px;
+                    padding-left: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    li{
+                        list-style: circle;
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .price-item{
+                    background-color: gainsboro;
+                    padding: 10px 0;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    // SECTION SERVICE END
 }
