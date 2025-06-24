@@ -698,4 +698,98 @@
 .haha-studio-wrapper .section-contact .contact-wraper .contact-items .item:hover a {
   color: white;
 }
+
+.haha-studio-wrapper .media-mansonry {
+  margin: 7rem auto;
+  padding: 0 20px;
+}
+
+.haha-studio-wrapper .media-mansonry .grid-wrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.haha-studio-wrapper .media-mansonry .grid-wrapper > div:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.haha-studio-wrapper .media-mansonry .grid-wrapper > div > img {
+  width: 100%;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.haha-studio-wrapper .media-mansonry .grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 400px;
+  grid-auto-flow: dense;
+}
+
+.haha-studio-wrapper .media-mansonry .grid-wrapper .wide {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.haha-studio-wrapper .media-mansonry .grid-wrapper .tall {
+  grid-row: span 2;
+}
+
+.haha-studio-wrapper .media-mansonry .grid-wrapper .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.haha-studio-wrapper .media-mansonry .image-modal {
+  display: none;
+  position: fixed;
+  z-index: 999999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+}
+
+.haha-studio-wrapper .media-mansonry .image-modal .modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+
+.haha-studio-wrapper .media-mansonry .close-modal {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
 /*# sourceMappingURL=index.css.map */
