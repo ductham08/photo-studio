@@ -257,6 +257,31 @@
         }
     }
 
+    // SECTION HERO START
+    .section-hero {
+        .backgound{
+            .desktop {
+                display: block;
+            }
+    
+            .mobile {
+                display: none;
+            }
+    
+            @media screen and (max-width: 768px) {
+                .desktop {
+                    display: none;
+                }
+    
+                .mobile {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    // SECTION HERO END
+
     // HEADER END
 
     // SECTION ABOUT START
@@ -275,7 +300,7 @@
                 }
 
                 .about-thumb {
-                    width: 65%;
+                    width: 45%;
 
                     @media screen and (max-width: 768px) {
                         width: 100%;
@@ -283,7 +308,7 @@
                 }
 
                 .about-text {
-                    width: 35%;
+                    width: 55%;
                     padding-left: 35px;
                     display: flex;
                     flex-direction: column;
@@ -608,7 +633,7 @@
                 }
             }
         }
-        
+
         .grid-wrapper>div>img {
             width: 100%;
             transition: all 0.7s ease;

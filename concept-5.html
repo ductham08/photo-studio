@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="icon" href="./access/images/favicon.png">
+    <title>Haha Studio | Concept 5</title>
+
+    <link rel="stylesheet" href="./access/styles/index.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="haha-studio" class="haha-studio-wrapper" >
+        <!-- HEADER START -->
+        <header class="header-wrapper">
+            <div class="container">
+                <div class="header-content header-desktop">
+                    <div class="logo">
+                        <h1>
+                            <a href="/">HaHa Studio</a>
+                        </h1>
+                    </div>
+                    <div class="menu-wrapper">
+                        <div class="menu-item">
+                            <a href="/#about-us">Về chúng tôi</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="/#service">Dịch vụ</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="/#collection">Bộ sưu tập</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="/#price">Bảng giá</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="/#booking">Đặt lịch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-mobile header-content">
+                <div class="top-wraper">
+                    <div class="logo">
+                        <h1>
+                            <a href="/">HaHa Studio</a>
+                        </h1>
+                    </div>
+                    <div class="button-wraper">
+                        <div class="line top"></div>
+                        <div class="line middle"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </div>
+
+                <div class="menu-mobile-wrapper">
+                    <div class="bg-overlay"></div>
+                    <div class="menu-wrapper">
+                        <div class="menu-item">
+                            <a href="/#about-us">Về chúng tôi</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="/#service">Dịch vụ</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="/#collection">Bộ sưu tập</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="/#price">Bảng giá</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="/#booking">Đặt lịch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+
+        <section class="media-mansonry">
+            <div class="grid-wrapper">
+                <div class="tall"  class="">
+                    <img class="preview-img" src="./access/images/concepts/concept-5/1.jpg" alt="" />
+                </div>
+                <div class="tall">
+                    <img class="preview-img" src="./access/images/concepts/concept-5/2.jpg" alt="" />
+                </div>
+                <div class="wide ">
+                    <img class="preview-img" src="./access/images/concepts/concept-5/3.jpg" alt="" />
+                </div>
+                <div class="tall">
+                    <img class="preview-img" src="./access/images/concepts/concept-5/4.jpg" alt="" />
+                </div>
+                <div class="wide">
+                    <img class="preview-img" src="./access/images/concepts/concept-5/5.jpg" alt="" />
+                </div>
+                <div class="wide">
+                    <img class="preview-img" src="./access/images/concepts/concept-5/6.jpg" alt="" />
+                </div>
+            </div>
+
+            <div class="image-modal" id="image-modal">
+                <img class="modal-content" id="modal-img" />
+              </div>
+        </section>
+
+    </div>
+
+    <!-- JAVASCRIPT START -->
+    <script>
+        $('.button-wraper').click(function () {
+            $(this).toggleClass('active');
+            $('.menu-mobile-wrapper').toggleClass('active');
+        });
+
+        $(document).ready(function () {
+            $('.preview-img').on('click', function () {
+                const src = $(this).attr('src');
+                $('#modal-img').attr('src', src);
+                $('#image-modal').fadeIn(200);
+            });
+
+            $('#image-modal').on('click', function (e) {
+                if (e.target.id === 'close-modal' || e.target.id === 'image-modal') {
+                    $('#image-modal').fadeOut(200);
+                }
+            });
+        });
+    </script>
+    <!-- JAVASCRIPT END -->
+</body>
+
+</html>
