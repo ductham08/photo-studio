@@ -33,21 +33,22 @@
   width: 100%;
   max-width: var(--width-container);
   margin: 0px auto;
-  padding: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .haha-studio-wrapper .container {
-    padding: 0px 10px;
-  }
+  padding: 0 20px;
 }
 
 .haha-studio-wrapper .title {
-  font-weight: 600;
   color: black;
-  font-size: 32px;
+  font-size: 24px;
   margin-bottom: 25px;
   text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .haha-studio-wrapper .title {
+    font-size: 20px;
+  }
 }
 
 .haha-studio-wrapper .booking a {
@@ -60,29 +61,23 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
   white-space: unset;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(98%, #000000));
-  background-image: linear-gradient(to bottom, #000000 0%, #000000 98%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9aa9e), color-stop(98%, #f9aa9e));
+  background-image: linear-gradient(to bottom, #f9aa9e 0%, #f9aa9e 98%);
   background-size: 0 1px;
   background-repeat: no-repeat;
   background-position: left 100%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5px 0;
+  border: 1px solid gainsboro;
+  padding: 7px 10px;
+  display: block;
 }
 
 .haha-studio-wrapper .booking a:hover {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-size: 100% 1px;
+  border-bottom: 1px solid #f9aa9e;
 }
 
 .haha-studio-wrapper span.red {
@@ -120,13 +115,13 @@
   padding: 15px 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .haha-studio-wrapper .header-wrapper .header-content.header-desktop {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .haha-studio-wrapper .header-wrapper .header-content.header-mobile {
     display: none;
   }
@@ -159,6 +154,30 @@
   color: black;
   letter-spacing: 1px;
   text-decoration: none;
+  white-space: unset;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(98%, #000000));
+  background-image: linear-gradient(to bottom, #000000 0%, #000000 98%);
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 0;
+}
+
+.haha-studio-wrapper .header-wrapper .header-content .menu-wrapper .menu-item a:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-size: 100% 1px;
 }
 
 .haha-studio-wrapper .header-wrapper .header-mobile {
@@ -332,6 +351,7 @@
     width: 100%;
     padding-top: 25px;
     padding-left: 0;
+    padding-bottom: 0px;
   }
 }
 
@@ -352,6 +372,108 @@
 
 .haha-studio-wrapper .section-about .about-content .content-wraper .about-text .booking {
   margin-top: 25px;
+}
+
+.haha-studio-wrapper .section-service {
+  padding: 15px 0;
+  margin: 3rem 0;
+}
+
+.haha-studio-wrapper .section-service .service-content .service-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .haha-studio-wrapper .section-service .service-content .service-wraper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.haha-studio-wrapper .section-service .service-content .service-wraper .about-thumb {
+  width: 45%;
+  padding-left: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .haha-studio-wrapper .section-service .service-content .service-wraper .about-thumb {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.haha-studio-wrapper .section-service .service-content .service-wraper .services {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .haha-studio-wrapper .section-service .service-content .service-wraper .services {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 25px;
+  }
+}
+
+.haha-studio-wrapper .section-service .service-content .service-wraper .services .item-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid gainsboro;
+  padding: 10px 0;
+}
+
+.haha-studio-wrapper .section-service .service-content .service-wraper .services .item-service .title-service {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.haha-studio-wrapper .section-service .service-content .service-wraper .services .item-service .desc-service {
+  padding-left: 20px;
+}
+
+.haha-studio-wrapper .section-service .service-content .service-wraper .services .item-service .desc-service ul {
+  padding-left: 20px;
+  width: 100%;
+}
+
+.haha-studio-wrapper .section-service .service-content .service-wraper .services .item-service .desc-service ul li {
+  list-style: circle;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .haha-studio-wrapper .section-concept {
@@ -418,12 +540,12 @@
   text-transform: uppercase;
 }
 
-.haha-studio-wrapper .section-service {
+.haha-studio-wrapper .section-price {
   padding: 15px 0;
   margin-bottom: 3rem;
 }
 
-.haha-studio-wrapper .section-service .service-wraper {
+.haha-studio-wrapper .section-price .service-wraper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,25 +560,25 @@
   gap: 25px;
 }
 
-.haha-studio-wrapper .section-service .service-wraper .item-service {
+.haha-studio-wrapper .section-price .service-wraper .item-service {
   width: calc((100% - 50px) / 3);
   padding: 50px 25px;
   border: 1px solid gainsboro;
 }
 
 @media screen and (max-width: 768px) {
-  .haha-studio-wrapper .section-service .service-wraper .item-service {
+  .haha-studio-wrapper .section-price .service-wraper .item-service {
     width: calc((100% - 25px) / 2);
   }
 }
 
 @media screen and (max-width: 500px) {
-  .haha-studio-wrapper .section-service .service-wraper .item-service {
+  .haha-studio-wrapper .section-price .service-wraper .item-service {
     width: 100%;
   }
 }
 
-.haha-studio-wrapper .section-service .service-wraper .item-service .title-item {
+.haha-studio-wrapper .section-price .service-wraper .item-service .title-item {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
@@ -464,7 +586,7 @@
   text-align: center;
 }
 
-.haha-studio-wrapper .section-service .service-wraper .item-service .desc-wraper {
+.haha-studio-wrapper .section-price .service-wraper .item-service .desc-wraper {
   margin-bottom: 20px;
   padding-left: 20px;
   display: -webkit-box;
@@ -477,14 +599,14 @@
   gap: 10px;
 }
 
-.haha-studio-wrapper .section-service .service-wraper .item-service .desc-wraper li {
+.haha-studio-wrapper .section-price .service-wraper .item-service .desc-wraper li {
   list-style: circle;
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-.haha-studio-wrapper .section-service .service-wraper .item-service .price-item {
+.haha-studio-wrapper .section-price .service-wraper .item-service .price-item {
   background-color: gainsboro;
   padding: 10px 0;
   text-align: center;

@@ -38,19 +38,19 @@
         width: 100%;
         max-width: var(--width-container);
         margin: 0px auto;
-        padding: 0;
-
-        @media screen and (max-width: 768px) {
-            padding: 0px 10px;
-        }
+        padding: 0 20px;
     }
 
     .title {
-        font-weight: 600;
         color: black;
-        font-size: 32px;
+        font-size: 24px;
         margin-bottom: 25px;
         text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        @media screen and (max-width: 768px) {
+            font-size: 20px;
+        }
     }
 
     .booking {
@@ -63,19 +63,19 @@
             transition: all 0.3s ease;
             text-transform: uppercase;
             white-space: unset;
-            background-image: linear-gradient(to bottom, #000000 0%, #000000 98%);
+            background-image: linear-gradient(to bottom,  #f9aa9e 0%, #f9aa9e 98%);
             background-size: 0 1px;
             background-repeat: no-repeat;
             background-position: left 100%;
             transition: all 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 5px 0;
-
+            border: 1px solid gainsboro;
+            padding: 7px 10px;
+            display: block;
+            
             &:hover {
                 transition: all 0.3s;
                 background-size: 100% 1px;
+                border-bottom: 1px solid #f9aa9e;
             }
         }
     }
@@ -110,13 +110,13 @@
             padding: 15px 0;
 
             &.header-desktop {
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 769px) {
                     display: none;
                 }
             }
 
             &.header-mobile {
-                @media screen and (min-width: 768px) {
+                @media screen and (min-width: 769px) {
                     display: none;
                 }
             }
@@ -146,6 +146,21 @@
                         color: black;
                         letter-spacing: 1px;
                         text-decoration: none;
+                        white-space: unset;
+                        background-image: linear-gradient(to bottom, #000000 0%, #000000 98%);
+                        background-size: 0 1px;
+                        background-repeat: no-repeat;
+                        background-position: left 100%;
+                        transition: all 0.3s;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 5px 0;
+
+                        &:hover {
+                            transition: all 0.3s;
+                            background-size: 100% 1px;
+                        }
                     }
                 }
             }
@@ -279,6 +294,7 @@
                         width: 100%;
                         padding-top: 25px;
                         padding-left: 0;
+                        padding-bottom: 0px;
                     }
 
                     h1 {
@@ -299,6 +315,82 @@
                     .booking {
                         margin-top: 25px;
                     }
+                }
+            }
+        }
+    }
+
+    // SECTION ABOUT END
+
+    // SECTION ABOUT START
+    .section-service {
+        padding: 15px 0;
+        margin: 3rem 0;
+
+        .service-content {
+            .service-wraper {
+                display: flex;
+                align-items: stretch;
+                justify-content: space-around;
+
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                }
+
+                .about-thumb {
+                    width: 45%;
+                    padding-left: 35px;
+
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        padding-left: 0;
+                    }
+                }
+
+                .services {
+                    width: 55%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        padding-left: 0;
+                        padding-bottom: 25px;
+                    }
+
+                    .item-service {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        width: 100%;
+                        border-bottom: 1px solid gainsboro;
+                        padding: 10px 0;
+
+                        .title-service {
+                            font-size: 20px;
+                            margin-bottom: 10px;
+                        }
+
+                        .desc-service {
+                            padding-left: 20px;
+
+                            ul{
+                                padding-left: 20px;
+                                width: 100%;
+                                li{
+                                    list-style: circle;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+
+
                 }
             }
         }
@@ -363,7 +455,7 @@
     // SECTION CONCEPT END
 
     // SECTION SERVICE START
-    .section-service {
+    .section-price {
         padding: 15px 0;
         margin-bottom: 3rem;
 
@@ -395,13 +487,14 @@
                     text-align: center;
                 }
 
-                .desc-wraper{
+                .desc-wraper {
                     margin-bottom: 20px;
                     padding-left: 20px;
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
-                    li{
+
+                    li {
                         list-style: circle;
                         font-size: 16px;
                         font-weight: 500;
@@ -409,7 +502,7 @@
                     }
                 }
 
-                .price-item{
+                .price-item {
                     background-color: gainsboro;
                     padding: 10px 0;
                     text-align: center;
