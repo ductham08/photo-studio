@@ -39,6 +39,10 @@
         max-width: var(--width-container);
         margin: 0px auto;
         padding: 0 20px;
+
+        @media screen and (max-width: 768px) {
+            padding: 0 15px;
+        }
     }
 
     .title {
@@ -653,15 +657,28 @@
         .grid-wrapper .wide {
             grid-column: span 3;
             grid-row: span 2;
+
+            @media screen and (max-width: 768px) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
         }
 
         .grid-wrapper .tall {
             grid-row: span 2;
+            @media screen and (max-width: 768px) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
         }
 
         .grid-wrapper .big {
             grid-column: span 2;
             grid-row: span 2;
+            @media screen and (max-width: 768px) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
         }
 
         .image-modal {
