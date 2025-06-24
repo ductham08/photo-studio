@@ -9,12 +9,14 @@
     <title>Haha Studio | Nơi lưu trữ khoảnh khắc</title>
 
     <link rel="stylesheet" href="./access/styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 </head>
 
 <body>
-    <div id="haha-studio" class="haha-studio-wrapper">
+    <div id="haha-studio" class="haha-studio-wrapper" data-scroll-container>
         <!-- HEADER START -->
         <header class="header-wrapper">
             <div class="container">
@@ -83,33 +85,39 @@
         <!-- HEADER END -->
 
         <!-- SECTION HERO START -->
-        <section class="section-hero">
-            <div class="overlay"></div>
-            <div class="backgound">
+        <section class="section-hero" data-scroll-section>
+            <div class="backgound" data-scroll data-scroll-speed="1">
                 <img src="./access/images/banner-hero-2.jpg" width="100%" alt="">
             </div>
         </section>
         <!-- SECTION HERO END -->
 
         <!-- SECTION ABOUT START -->
-        <section class="section-about" id="about-us">
+        <section class="section-about" id="about-us" data-scroll-section>
             <div class="container">
                 <div class="about-content">
-                    <h2 class="title" data-aos="fade-right">Về Chúng Tôi</h2>
+                    <h2 class="title" data-scroll data-scroll-speed="1" data-scroll-delay="0.05"> Về Chúng Tôi </h2>
+
                     <div class="content-wraper">
-                        <div class="about-thumb" data-aos="zoom-in" >
+                        <div class="about-thumb" data-scroll data-scroll-speed="1" data-scroll-delay="0.05">
                             <img src="./access/images/about-thumb.png" width="100%" alt="">
                         </div>
-                        <div class="about-text"  data-aos="fade-down-left" >
+
+                        <div class="about-text" data-scroll data-scroll-speed="1.5" data-scroll-delay="0.05">
                             <div class="text">
-                                <h1><span class="yellow">HAHA Studio</span> – Câu chuyện bắt đầu từ hai chữ "đẹp"</h1>
-                                <p>Tại HAHA Studio, mỗi bức ảnh không đơn thuần là một tấm hình. Đó là một câu chuyện, một cảm xúc, một phiên bản đẹp nhất của bạn.</p>
-                                <p>Studio được sáng lập bởi <span class="red"><i>Hạnh</i></span> và <span class="red"><i>Hằng</i></span> – hai cô gái Genz yêu cái đẹp và luôn khao khát tạo nên một không gian chụp ảnh tinh tế, hiện đại nhưng vẫn gần gũi và chân thành.</p>
-                                <p>Cái tên <span class="red"><i>“HAHA”</i></span> không chỉ là sự kết hợp ngẫu nhiên giữa hai cái tên, mà còn mang đến tinh thần tươi vui, trẻ trung – như một trạm dừng để bạn cười thật lòng, sống thật đẹp và ghi lại những điều đáng nhớ nhất của thanh xuân.</p>
+                                <h1 data-scroll data-scroll-speed="2"><span class="yellow">HAHA Studio</span> – Câu
+                                    chuyện bắt đầu từ hai chữ "đẹp"</h1>
+                                <p data-scroll data-scroll-speed="1">Tại HAHA Studio, mỗi bức ảnh không đơn thuần là một
+                                    tấm hình. Đó là một câu chuyện, một cảm xúc, một phiên bản đẹp nhất của bạn.</p>
+                                <p data-scroll data-scroll-speed="1">Studio được sáng lập bởi <span
+                                        class="red"><i>Hạnh</i></span> và <span class="red"><i>Hằng</i></span> – hai cô
+                                    gái Genz yêu cái đẹp...</p>
+                                <p data-scroll data-scroll-speed="1">Cái tên <span class="red"><i>“HAHA”</i></span>
+                                    không chỉ là sự kết hợp ngẫu nhiên...</p>
                             </div>
 
-                            <div class="booking">
-                                <a href="#" data-aos="fade-left">Liên hệ với chúng mình </a>
+                            <div class="booking" data-scroll data-scroll-speed="1">
+                                <a href="#">Liên hệ với chúng mình </a>
                             </div>
                         </div>
                     </div>
@@ -118,18 +126,18 @@
         </section>
         <!-- SECTION ABOUT END -->
 
-       <!-- SECTION SERVICE START -->
-       <section class="section-service" id="service">
+        <!-- SECTION SERVICE START -->
+        <section class="section-service" id="service" data-scroll-section>
             <div class="container">
                 <div class="service-content">
-                    <h2 class="title" data-aos="fade-right">Dịch vụ</h2>
+                    <h2 class="title" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">Dịch vụ</h2>
+
                     <div class="service-wraper">
-                        <div class="services"  data-aos="fade-down-left" >
-                            <div class="item-service">
+                        <div class="services" data-scroll data-scroll-speed="1.5" data-scroll-delay="0.15">
+                            <div class="item-service" data-scroll data-scroll-speed="1" data-scroll-delay="0.2">
                                 <div class="title-service">
                                     Chụp ảnh <span class="red">chân dung cá nhân</span>
                                 </div>
-
                                 <div class="desc-service">
                                     <ul>
                                         <li>Dành cho mọi độ tuổi, mọi phong cách</li>
@@ -137,12 +145,12 @@
                                     </ul>
                                 </div>
                             </div>
-                            
-                            <div class="item-service">
-                                <div class="title-service">
-                                    <span class="yellow">Concept</span> <span class="red">ảnh sáng tạo – Gen Z vibes</span>
-                                </div>
 
+                            <div class="item-service" data-scroll data-scroll-speed="1" data-scroll-delay="0.25">
+                                <div class="title-service">
+                                    <span class="yellow">Concept</span> <span class="red">ảnh sáng tạo – Gen Z
+                                        vibes</span>
+                                </div>
                                 <div class="desc-service">
                                     <ul>
                                         <li>Tone trắng tối giản / màu pastel Hàn Quốc / cá tính đậm chất riêng</li>
@@ -151,11 +159,10 @@
                                 </div>
                             </div>
 
-                            <div class="item-service">
+                            <div class="item-service" data-scroll data-scroll-speed="1" data-scroll-delay="0.3">
                                 <div class="title-service">
                                     Chụp ảnh <span class="green">profile chuyên nghiệp</span>
                                 </div>
-
                                 <div class="desc-service">
                                     <ul>
                                         <li>Phù hợp cho CV, LinkedIn, doanh nghiệp</li>
@@ -164,22 +171,21 @@
                                 </div>
                             </div>
 
-                            <div class="item-service">
+                            <div class="item-service" data-scroll data-scroll-speed="1" data-scroll-delay="0.35">
                                 <div class="title-service">
-                                    <span class="red">Makeup</span> & <span class="green">Tư vấn tạo dáng</span> chuyên sâu
+                                    <span class="red">Makeup</span> & <span class="green">Tư vấn tạo dáng</span> chuyên
+                                    sâu
                                 </div>
-
                                 <div class="desc-service">
                                     <ul>
                                         <li>Hướng dẫn pose dáng theo từng dáng người</li>
-                                        <li>keup phù hợp ánh sáng chụp và concept đã chọn</li>
+                                        <li>Makeup phù hợp ánh sáng chụp và concept đã chọn</li>
                                     </ul>
                                 </div>
                             </div>
-
                         </div>
 
-                        <div class="about-thumb" data-aos="zoom-in" >
+                        <div class="about-thumb" data-scroll data-scroll-speed="-1.5" data-scroll-delay="0.2">
                             <img src="./access/images/about-thumb.png" width="100%" alt="">
                         </div>
                     </div>
@@ -189,13 +195,13 @@
         <!-- SECTION SERVICE END -->
 
         <!-- CONCEPT START -->
-        <section class="section-concept" id="collection">
+        <section class="section-concept" id="collection" data-scroll-section>
             <div class="container">
                 <div class="concept-content">
-                    <h2 class="title" data-aos="fade-right">Concept</h2>
-                    <div class="concept-wraper">
+                    <h2 class="title" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">Concept</h2>
 
-                        <div class="media wide" data-aos="zoom-out-up" >
+                    <div class="concept-wraper">
+                        <div class="media wide" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">
                             <div class="thumb">
                                 <a href="">
                                     <img src="./access/images/concept-1.png" width="100%" alt="">
@@ -207,7 +213,7 @@
                             </div>
                         </div>
 
-                        <div class="media wide" data-aos="zoom-out-up" >
+                        <div class="media wide" data-scroll data-scroll-speed="1" data-scroll-delay="0.15">
                             <div class="thumb">
                                 <a href="">
                                     <img src="./access/images/concept-2.png" width="100%" alt="">
@@ -219,7 +225,7 @@
                             </div>
                         </div>
 
-                        <div class="media wide" data-aos="zoom-out-up" >
+                        <div class="media wide" data-scroll data-scroll-speed="1" data-scroll-delay="0.2">
                             <div class="thumb">
                                 <a href="">
                                     <img src="./access/images/concept-3.png" width="100%" alt="">
@@ -231,7 +237,7 @@
                             </div>
                         </div>
 
-                        <div class="media wide" data-aos="zoom-out-up" >
+                        <div class="media wide" data-scroll data-scroll-speed="1" data-scroll-delay="0.25">
                             <div class="thumb">
                                 <a href="">
                                     <img src="./access/images/concept-4.png" width="100%" alt="">
@@ -243,7 +249,7 @@
                             </div>
                         </div>
 
-                        <div class="media wide" data-aos="zoom-out-up" >
+                        <div class="media wide" data-scroll data-scroll-speed="1" data-scroll-delay="0.3">
                             <div class="thumb">
                                 <a href="">
                                     <img src="./access/images/concept-5.png" width="100%" alt="">
@@ -255,7 +261,7 @@
                             </div>
                         </div>
 
-                        <div class="media wide" data-aos="zoom-out-up" >
+                        <div class="media wide" data-scroll data-scroll-speed="1" data-scroll-delay="0.35">
                             <div class="thumb">
                                 <a href="">
                                     <img src="./access/images/concept-6.png" width="100%" alt="">
@@ -266,7 +272,6 @@
                                 <h3>Concept 6</h3>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -274,13 +279,13 @@
         <!-- CONCEPT END -->
 
         <!-- SERVICE START -->
-        <section class="section-price" id="price">
+        <section class="section-price" id="price" data-scroll-section>
             <div class="container">
                 <div class="service-content">
-                    <h2 class="title" data-aos="fade-right">Bảng giá</h2>
+                    <h2 class="title" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">Bảng giá</h2>
+
                     <div class="service-wraper">
-                        
-                        <div class="item-service">
+                        <div class="item-service" data-scroll data-scroll-speed="1" data-scroll-delay="0.15">
                             <div class="title-item">Gói <span class="red">trải nghiệm</span></div>
                             <ul class="desc-wraper">
                                 <li>1 Layout makeup & tóc, trang phục và phụ kiện sẵn tại Studio</li>
@@ -291,51 +296,54 @@
                                 <li>Thời gian makeup & làm tóc: 1h30</li>
                                 <li>Thời gian chụp: 30 phút</li>
                             </ul>
-                            <div class="price-item"> Từ 1.500.000 VNĐ </div>
+                            <div class="price-item">Từ 1.500.000 VNĐ</div>
                         </div>
-                        
-                        <div class="item-service">
+
+                        <div class="item-service" data-scroll data-scroll-speed="1" data-scroll-delay="0.2">
                             <div class="title-item">Gói <span class="green">chuyên nghiệp</span></div>
                             <ul class="desc-wraper">
                                 <li>1 layout makeup & tóc, trang phục và phụ kiện có sẵn ở studio</li>
                                 <li>1 concept chụp chân dung, bán thân, toàn thân (thơ, sexy, sinh nhật,...)</li>
                                 <li>Trả toàn bộ ảnh gốc trong ngày.</li>
-                                <li>Trả <span class="yellow">07 ảnh</span> chỉnh sửa sau 10 ngày kể từ ngày bạn gửi mã số</li>
+                                <li>Trả <span class="yellow">07 ảnh</span> chỉnh sửa sau 10 ngày kể từ ngày bạn gửi mã
+                                    số</li>
                                 <li>Fix ảnh tối đa hai lần</li>
                                 <li>Thời gian makeup & làm tóc: 2-3h</li>
                                 <li>Thời gian chụp: 1h</li>
                             </ul>
-                            <div class="price-item"> Từ 2.000.000 VNĐ </div>
+                            <div class="price-item">Từ 2.000.000 VNĐ</div>
                         </div>
-                        
-                        <div class="item-service">
+
+                        <div class="item-service" data-scroll data-scroll-speed="1" data-scroll-delay="0.25">
                             <div class="title-item"><span class="yellow">Combo </span>3 concept</div>
                             <ul class="desc-wraper">
-                                <li>Mua một lần - tiết kiệm cho những lần chụp sau, thời hạn 3 tháng, có thể share với bạn bè người thân</li>
+                                <li>Mua một lần - tiết kiệm cho những lần chụp sau, thời hạn 3 tháng, có thể share với
+                                    bạn bè người thân</li>
                                 <li>3 layout makeup & tóc, trang phục và phụ kiện có sẵn ở studio</li>
                                 <li>3 concept <span class="red">chuyên nghiệp</span></li>
                                 <li>Trả toàn bộ ảnh gốc trong ngày</li>
                                 <li>Mỗi concept trả 7 ảnh chỉnh sửa sau 10 ngày kể từ ngày bạn gửi mã số</li>
                                 <li>Makeup và thời gian chụp tuỳ vào concept bạn lựa chọn</li>
                             </ul>
-                            <div class="price-item"> Từ 5.000.000 VNĐ </div>
+                            <div class="price-item">Từ 5.000.000 VNĐ</div>
                         </div>
-                        
-                        <div class="item-service">
+
+                        <div class="item-service" data-scroll data-scroll-speed="1" data-scroll-delay="0.3">
                             <div class="title-item">Couple <span class="green">trong studio</span></div>
                             <ul class="desc-wraper">
                                 <li>1 layout makeup & tóc, trang phục và phụ kiện có sẵn ở studio cho 02 người</li>
-                                <li>1 concept chụp <span class="red">couple bạn thân</span>, <span class="yellow">người yêu</span>, <span class="green">mẹ con</span>,...</li>
+                                <li>1 concept chụp <span class="red">couple bạn thân</span>, <span class="yellow">người
+                                        yêu</span>, <span class="green">mẹ con</span>,...</li>
                                 <li>Trả toàn bộ ảnh gốc trong ngày</li>
                                 <li>Trả 7 ảnh chỉnh sửa sau 10 ngày kể từ ngày bạn gửi mã số</li>
                                 <li>Fix ảnh tối đa hai lần</li>
                                 <li>Thời gian makeup & làm tóc: 2-3h</li>
                                 <li>Thời gian chụp: 1h-1h30p</li>
                             </ul>
-                            <div class="price-item"> Từ 2.500.000 VNĐ </div>
+                            <div class="price-item">Từ 2.500.000 VNĐ</div>
                         </div>
-                        
-                        <div class="item-service">
+
+                        <div class="item-service" data-scroll data-scroll-speed="1" data-scroll-delay="0.35">
                             <div class="title-item">Chụp <span class="yellow">Ngoại cảnh</span></div>
                             <ul class="desc-wraper">
                                 <li>Chụp nhóm 4 người trở lên chỉ 999.000đ/1người</li>
@@ -347,9 +355,8 @@
                                 <li>Thời gian makeup & làm tóc: 2-3</li>
                                 <li>Thời gian chụp: 1h-1h30p</li>
                             </ul>
-                            <div class="price-item"> Từ 2.000.000 VNĐ </div>
+                            <div class="price-item">Từ 2.000.000 VNĐ</div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -358,7 +365,6 @@
 
     </div>
 
-
     <!-- JAVASCRIPT START -->
     <script>
         $('.button-wraper').click(function () {
@@ -366,32 +372,11 @@
             $('.menu-mobile-wrapper').toggleClass('active');
         });
 
-        let thumbSwiper = new Swiper(".thumb-slider", {
-            slidesPerView: 2,
-            watchSlidesProgress: true,
-            loop: true,
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                },
-                640: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                }
-            },
-        });
-
-        let mainSwiper = new Swiper(".main-slider", {
-            loop: true,
-            navigation: true,
-            thumbs: {
-                swiper: thumbSwiper,
-            },
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,
+            lerp: 0.1, // độ mượt (0 - 1)
+            multiplier: 1, // tốc độ cuộn
         });
     </script>
     <!-- JAVASCRIPT END -->
